@@ -14,26 +14,28 @@
 //les variables
 $x=5;
 $y=6;
-$z=$x+$y;
-echo $z;
+$z=6;
+$t=6;
+$d=$x+$y+$z+$t;
+echo $d;
 
 //les operateurs arithmetiques
 //addition
 
-$a = 6 + 42;//la reponse est 48
+$x = 6 + 42;//la reponse est 48
 
 //Multiplication 
-$m = 12 * 5; //la reponse est 60
+$y= 12 * 5; //la reponse est 60
 //la division
-$d = 40 / 2; //la reponse est 20
+$z= 40 / 2; //la reponse est 20
 
 //la soustraction
-$s = 120 - 2; //la reponse est 118
+$t= 120 - 2; //la reponse est 118
 
 // le reste de la division entier
-$r = 53 % 9; //la reponse est 8
+$d= 53 % 9; //la reponse est 8
 
-echo " $m,$d,$a,$s,$r";  
+echo " $x,$y,$z,$t,$d";  
   
 //Les booleens
 $login== true;
@@ -65,26 +67,26 @@ break;
 break;
 }
 //while
-$a=0;
-while($a<=20){
-  echo"le nombre est :".$a."<br>";
-  $a++;
+$x=0;
+while($x<=20){
+  echo"le nombre est :".$x."<br>";
+  $x++;
 // do while
-$b=0;
+$y=0;
 do{
-	echo "c'est le nombre : ".$b."<br/>";
-	$b++;
+	echo "c'est le nombre : ".$y."<br/>";
+	$y++;
 
 
 }
 
-while ($b<= 20);
+while ($y<= 20);
 
 // for
 
-for ($i=0; $i <10 ; $i++) { 
+for ($z=0; $z <10 ; $z++) { 
 	
-	echo " le nombre est : ".$i."<br/>";
+	echo " le nombre est : ".$z."<br/>";
 
 
 
@@ -92,19 +94,33 @@ for ($i=0; $i <10 ; $i++) {
 echo "<br/>";
 echo " <br/>";
 
-for ($a=10; $a >0 ; $a--) { 
-	echo "le nombre est : ".$a."<br/>";
+for ($y=10; $y >0 ; $y--) { 
+	echo "le nombre est : ".$y."<br/>";
 }
 
+//Les tableaux
+// Déclaration d'un tableau vide
+$fruits = array();
+ 
+// Déclaration d'un tableau indexé numériquement
+$legumes = array('carotte','poivron','aubergine','chou');
 
+// Déclaration d'un tableau associatif
+$identite = array(
+ 
+    'nom' => 'Hamon', 
+    'prenom' => 'Hugo', 
+    'age' => 19, 
+    'estEtudiant' => true
+);
 
 
 //Les fonctions
 
 
-function cube($n)
+function cube($y)
 {
-  return $n*$n*$n;
+  return $y*$y*$y;
 }
 echo "cube(3)";
 
