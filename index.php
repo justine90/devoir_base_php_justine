@@ -116,7 +116,7 @@
   {
     return $y * $y * $y;
   }
-  echo "Le cube de 3 est " . cube(3);
+  echo "<hr>Le cube de 3 est " . cube(3);
 
   ?>
 </body>
